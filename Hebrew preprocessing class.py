@@ -1,3 +1,10 @@
+import pandas as pd
+import numpy as np
+import hebrew_tokenizer as tokenizer
+import re
+from yap_api import YapApi
+from collections import defaultdict
+
 class Hebrew_preprocessing:
     def __init__ (self, additional_replacements = []):
      
