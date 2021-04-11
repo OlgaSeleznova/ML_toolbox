@@ -48,13 +48,13 @@ class Hebrew_preprocessing:
         return self.get_groups_tokenized(text)['punct']
     
     def punctuation_count(self, text:str)-> list():
-        return len(self.get_groups_tokenized(text)['punct'])
+        return len(self.punctuation(text))
     
     def numbers(self, text:str)-> list():
         return self.get_groups_tokenized(text)['numbers']
     
     def numbers_count(self, text:str)-> list():
-        return len(self.get_groups_tokenized(text)['numbers'])
+        return len(self.numbers(text))
     
     """
     Set up Hebrew Lematizer before the function. It need Go pre-installed. 
