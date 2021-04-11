@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 class Hebrew_preprocessing:
     def __init__ (self, additional_replacements = []):
      
