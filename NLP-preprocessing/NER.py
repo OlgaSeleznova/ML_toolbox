@@ -74,7 +74,7 @@ class NER:
                     print(f"Processing user number {user}")
             else:
                 print(f"Processing user number {user}")
-            #    
+            # iterate over users    
             for i in range(counter.get(data['id'][user])):
                 ner_data['index'].append(user)
                 ner_data['user'].append(data['id'][i])
