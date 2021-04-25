@@ -13,7 +13,7 @@ class English_preprocessing:
     #clean text with regex. custom_replacements list is empty by default
     def regex_cleaner(self, string:str, custom_replacements = []) -> str:    
         #list of tuples, where tuples are paterns to be replaced. 
-        #here only newline and multiple spaces are removed, because the class was created for sentiment analysis tasks, where some 
+        #here only newline and multiple spaces are removed, because the class was created for sentiment analysis tasks, where some punctuation marks are meaningful for prediction
         base_replacements = [
                (r'\\n',' '),                   # remove newline
                (r'(\s+)', ' ')                 # remove multiple spaces, created by the cleaning above 
