@@ -32,5 +32,6 @@ class English_preprocessing:
         return [token for token in self.tokenize(doc) if token not in stop_words]
 
     def lemmatize(self, sentence: str) -> list:
+        sentence = self.nlp(doc)
         return [word.lemma_ if word.lemma_ != "-PRON-" else word.lower_ for word in sentence]
 
