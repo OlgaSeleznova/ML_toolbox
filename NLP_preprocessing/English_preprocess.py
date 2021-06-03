@@ -35,7 +35,7 @@ class English_preprocessing:
         stop_words = spacy.lang.en.stop_words.STOP_WORDS  
         return [token for token in self.tokenize(doc) if token not in stop_words]
 
-    def lemmatize(self, sentence: str) -> list:
+    def lemmatize(self, doc: str) -> list:
         #create spacy object
         sentence = self.nlp(doc)     
         #return lemmas, not including pronouns
